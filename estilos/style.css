@@ -28,13 +28,13 @@ section#login {
     display: block;
     background-color: white;
     width: 260px;
-    height: 525px;
+    height: 540px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50% , -50%);
     border-radius: 5px;
     overflow: hidden;
+    -webkit-transform: translate(-50% , -50%);
 }
 
 div#imagem {
@@ -59,6 +59,34 @@ input#isenha , input#iemail {
 
 div.campo > label {
     display: none;
+}
+
+div.campo > input {
+  background-color: #89e9e6da;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: calc(100% - 39.5px);
+  height: 100%;
+  -webkit-transform: translateY(-4px);
+}
+
+div.campo > input#iemail {
+    -webkit-transform: translateY(-3px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+div.campo > i {
+    color: white;
+    height: 100%;
+    width: 35px;
+    border: 0px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 div#formulario {
